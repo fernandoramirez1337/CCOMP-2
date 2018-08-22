@@ -42,7 +42,7 @@ void funcion(float x)
         else if(monedas[i]&&(monedas[i]==1))
         cout<<"Hay "<<monedas[i]<<" moneda de "<<cambio[i]<<" centimos"<<endl;
     }
-    cout<<monedas[10]<<endl;
+    //cout<<monedas[10]<<endl;
 }
 
 void interfaz()
