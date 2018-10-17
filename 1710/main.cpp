@@ -29,6 +29,15 @@ void imprimir(float matriz[][5],int x,int y)
     cout<<endl;
 }
 
+void pivot(float matriz[][5],int ecuaciones,int n,int fila)
+{
+    float variable;
+    variable=1/matriz[fila][fila];
+    for(int i=0;i<n;i++)
+        matriz[fila][i]*=variable;
+
+}
+
 void funcion(float matriz[][5], int ecuaciones,int n)
 {
 
@@ -42,7 +51,7 @@ void funcion(float matriz[][5], int ecuaciones,int n)
 int main()
 {
     imprimir(matriz,4,5);
-    funcion(matriz,4,5);
+    pivot(matriz,4,5,1);
     imprimir(matriz,4,5);
 
     return 0;
